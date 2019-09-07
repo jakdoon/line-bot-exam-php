@@ -28,12 +28,11 @@ $today = date("d");
 
 foreach ($client->parseEvents() as $event) {
     
-            if($today == "08" ) {
+   if($today == "08" ) {
                 
     switch ($event['type']) {
         
         case 'beacon':
-          
                 
              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
@@ -48,17 +47,13 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
-            
-            
-            
-            
              break;
             
         default:
             error_log('Unsupported event type: ' . $event['type']);
             break;
-    }
+            }
                 
-            }//end if
+        } 
  
 };
