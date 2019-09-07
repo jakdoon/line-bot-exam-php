@@ -29,6 +29,7 @@ foreach ($client->parseEvents() as $event) {
         case 'beacon':
             if($today=='8')
             {
+              echo $today;
              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
@@ -42,6 +43,7 @@ foreach ($client->parseEvents() as $event) {
             }
              if($today=='9')
             {
+                 echo $today;
              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
