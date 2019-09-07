@@ -45,16 +45,7 @@ foreach ($client->parseEvents() as $event) {
             
         case 'beacon':
             
-             $client->replyMessage([
-                        'replyToken' => $event['replyToken'],
-                        'messages' => [
-                            [
-                                'type' => 'text',
-                                'text' => 'I find You'
-                            ]
-                        ]
-                    ]);
-            $client->replyMessage([
+              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             [
@@ -64,6 +55,17 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
+            
+             $client->replyMessage([
+                        'replyToken' => $event['replyToken'],
+                        'messages' => [
+                            [
+                                'type' => 'text',
+                                'text' => 'I find You'
+                            ]
+                        ]
+                    ]);
+          
             
              break;
             
