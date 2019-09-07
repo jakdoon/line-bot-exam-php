@@ -65,12 +65,12 @@ foreach ($client->parseEvents() as $event) {
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             [  
-                                'type' => 'text',
-                                'text' => 'วันนี้วันที่ 8 ครับ'
+                               // 'type' => 'text',
+                                //'text' => 'วันนี้วันที่ 8 ครับ'
                                 
-                                //'type' => 'image',
-                               // 'originalContentUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg',
-                               // 'previewImageUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg'
+                                'type' => 'image',
+                                'originalContentUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg',
+                                'previewImageUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg'
                             ]
                         ]
                     ]);
