@@ -56,6 +56,14 @@ foreach ($client->parseEvents() as $event) {
                         ]
                     ]);
             
+            $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($event['replyToken']);
+            $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret );
+            
+            $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+            $response = $bot->pushMessage('<to>', $textMessageBuilder);
+
+            echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+            
           
             
              break;
