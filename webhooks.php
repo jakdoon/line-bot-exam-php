@@ -27,7 +27,7 @@ $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 foreach ($client->parseEvents() as $event) {
     
-    $userto = $event['source[userId]'];
+    $userto = $event['source'];
         
     switch ($event['type']) {
         case 'beacon':
