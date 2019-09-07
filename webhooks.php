@@ -39,7 +39,7 @@ foreach ($client->parseEvents() as $event) {
                         'messages' => [
                             [  
                                 'type' => 'text',
-                                'text' => 'วันนี้วันที่ 8 ครับ'+$today
+                                'text' => 'วันนี้วันที่ 8 ครับ'+ $today;
                                 
                                 //'type' => 'image',
                                // 'originalContentUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg',
