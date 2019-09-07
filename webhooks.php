@@ -25,19 +25,18 @@ foreach ($client->parseEvents() as $event) {
         
         case 'beacon':
             
-            if($event['beacon.type'] == 'enter')
-            {
+            
             
               $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
-                            ['type' => 'image',
-                                'originalContentUrl' => 'https://ichef.bbci.co.uk/news/660/cpsprodpb/EF3C/production/_100844216_mediaitem100843403.jpg',
-                                'previewImageUrl' => 'https://ichef.bbci.co.uk/news/660/cpsprodpb/EF3C/production/_100844216_mediaitem100843403.jpg'
+                            [   'type' => 'image',
+                                'originalContentUrl' => 'https://ak9.picdn.net/shutterstock/videos/13334429/thumb/12.jpg',
+                                'previewImageUrl' => 'https://ak9.picdn.net/shutterstock/videos/13334429/thumb/12.jpg'
                             ]
                         ]
                     ]);
-            }
+            
             
              break;
             
