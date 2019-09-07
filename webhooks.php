@@ -46,7 +46,7 @@ foreach ($client->parseEvents() as $event) {
 
 
             $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
-            $response = $bot->pushMessage($userto[userId], $textMessageBuilder);
+            $response = $bot->pushMessage($userto->userId], $textMessageBuilder);
 
             echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
             
