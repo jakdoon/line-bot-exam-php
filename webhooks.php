@@ -21,7 +21,14 @@ $channelAccessToken = 'YOUx6X1kEbaLS5TynZm3x4nbd/now6MF4dSOUOIJnpNQJlQD5WKxDaJuI
 ';
 $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
+
+$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($channelAccessToken);
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
+
 foreach ($client->parseEvents() as $event) {
+    
+    $userto = $event['source[userId]'];
+        
     switch ($event['type']) {
         case 'beacon':
         
@@ -35,6 +42,13 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
+            
+
+
+            $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+            $response = $bot->pushMessage($userto[userId], $textMessageBuilder);
+
+            echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
             
             
              break;
