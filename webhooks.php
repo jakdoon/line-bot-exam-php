@@ -15,6 +15,8 @@
  * under the License.
  */
 require_once('./LINEBotTiny.php');
+$Type = $request['events'][0]['beacon']['type'];
+
 $channelAccessToken = 'YOUx6X1kEbaLS5TynZm3x4nbd/now6MF4dSOUOIJnpNQJlQD5WKxDaJuII+9qWJlKDW8pMUx3y8VBfASSx/1LHwNdZjEtx4aHAshsp2xauoLPri836m6LlOBe+GX+ZSt8wS3SycE/96jW8gYEBCCKgdB04t89/1O/w1cDnyilFU=
 ';
 $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
@@ -40,6 +42,21 @@ foreach ($client->parseEvents() as $event) {
                     break;
             }
             break;
+            
+        case 'beacon':
+            
+             $client->replyMessage([
+                        'replyToken' => $event['replyToken'],
+                        'messages' => [
+                            [
+                                'type' => 'text',
+                                'text' => 'I find You'
+                            ]
+                        ]
+                    ]);
+            
+             break;
+            
         default:
             error_log('Unsupported event type: ' . $event['type']);
             break;
