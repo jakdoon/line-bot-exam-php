@@ -54,6 +54,16 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
+            $client->replyMessage([
+                        'replyToken' => $event['replyToken'],
+                        'messages' => [
+                            [
+                                'type' => 'image',
+                                'originalContentUrl' => 'http://shorturl.at/mqEJ9',
+                                'previewImageUrl' => 'http://shorturl.at/mqEJ9'
+                            ]
+                        ]
+                    ]);
             
              break;
             
