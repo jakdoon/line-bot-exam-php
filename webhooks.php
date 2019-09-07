@@ -33,8 +33,8 @@ foreach ($client->parseEvents() as $event) {
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             ['type' => 'image',
-                                'originalContentUrl' => 'https://uppicimg.com/file/ODZaIWxQ.jpg',
-                                'previewImageUrl' => 'https://uppicimg.com/file/ODZaIWxQ.jpg'
+                                'originalContentUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg',
+                                'previewImageUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg'
                             ]
                         ]
                     ]);
