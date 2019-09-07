@@ -27,7 +27,21 @@ foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         
         case 'beacon':
-            
+            if($today=='8')
+            {
+             $client->replyMessage([
+                        'replyToken' => $event['replyToken'],
+                        'messages' => [
+                            ['type' => 'image',
+                                'originalContentUrl' => 'https://uppicimg.com/file/ODZaIWxQ.jpg',
+                                'previewImageUrl' => 'https://uppicimg.com/file/ODZaIWxQ.jpg'
+                            ]
+                        ]
+                    ]);
+                
+            }
+             if($today=='9')
+            {
              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
@@ -37,6 +51,8 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
+                
+            }
             
              break;
             
