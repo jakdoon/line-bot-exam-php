@@ -29,13 +29,12 @@ foreach ($client->parseEvents() as $event) {
         
     switch ($event['type']) {
         case 'beacon':
-              $client->replyMessage([
+                   $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             [
-                                'type' => 'sticker',
-                                'packageId' => '11537',
-                                'stickerId' => '52002745'
+                                'type' => 'text',
+                                'text' => 'I find You'
                             ]
                         ]
                     ]);
