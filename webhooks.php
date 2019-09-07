@@ -24,12 +24,16 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 date_default_timezone_set("Asia/Bangkok");
 $today = date("d"); 
 
+
+
 foreach ($client->parseEvents() as $event) {
+    
+            if($today == "08" ) {
+                
     switch ($event['type']) {
         
         case 'beacon':
           
-            if($today == "08" ) {
                 
              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
@@ -44,7 +48,7 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
-            }
+            
             
             
             
@@ -54,4 +58,6 @@ foreach ($client->parseEvents() as $event) {
             error_log('Unsupported event type: ' . $event['type']);
             break;
     }
+                
+            }//end if
 };
