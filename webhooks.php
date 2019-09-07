@@ -30,7 +30,7 @@ foreach ($client->parseEvents() as $event) {
                         'messages' => [
                             [
                                 'type' => 'image',
-                                'originalContentUrl' => 'https://shorturl.at/mqEJ9'
+                                'originalContentUrl' => 'https://shorturl.at/mqEJ9',
                                 'previewImageUrl' => 'https://shorturl.at/mqEJ9'
                             ]
                         ]
