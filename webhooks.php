@@ -16,20 +16,16 @@
  */
 require_once('./LINEBotTiny.php');
 $Type = $request['events'][0]['beacon']['type'];
-
 $channelAccessToken = 'YOUx6X1kEbaLS5TynZm3x4nbd/now6MF4dSOUOIJnpNQJlQD5WKxDaJuII+9qWJlKDW8pMUx3y8VBfASSx/1LHwNdZjEtx4aHAshsp2xauoLPri836m6LlOBe+GX+ZSt8wS3SycE/96jW8gYEBCCKgdB04t89/1O/w1cDnyilFU=
 ';
 $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
-
-
-
 foreach ($client->parseEvents() as $event) {
-   
-        
     switch ($event['type']) {
+        
         case 'beacon':
-                   $client->replyMessage([
+            
+             $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             [
@@ -39,7 +35,6 @@ foreach ($client->parseEvents() as $event) {
                         ]
                     ]);
             
-
              break;
             
         default:
