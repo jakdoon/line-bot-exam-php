@@ -49,9 +49,9 @@ foreach ($client->parseEvents() as $event) {
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             [
-                                'type' => 'image',
-                                'originalContentUrl' => 'http://shorturl.at/mqEJ9',
-                                'previewImageUrl' => 'http://shorturl.at/mqEJ9'
+                                'type' => 'sticker',
+                                'packageId' => '11537',
+                                'stickerId' => '52002745'
                             ]
                         ]
                     ]);
