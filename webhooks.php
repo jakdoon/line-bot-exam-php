@@ -30,8 +30,8 @@ foreach ($client->parseEvents() as $event) {
                         'messages' => [
                             [
                                 'type' => 'image',
-                                'originalContentUrl' => 'https://shorturl.at/mqEJ9',
-                                'previewImageUrl' => 'https://shorturl.at/mqEJ9'
+                                'originalContentUrl' => 'https://ichef.bbci.co.uk/news/660/cpsprodpb/EF3C/production/_100844216_mediaitem100843403.jpg',
+                                'previewImageUrl' => 'https://ichef.bbci.co.uk/news/660/cpsprodpb/EF3C/production/_100844216_mediaitem100843403.jpg'
                             ]
                         ]
                     ]);
