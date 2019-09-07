@@ -39,7 +39,7 @@ foreach ($client->parseEvents() as $event) {
                         'messages' => [
                             [  
                                 'type' => 'text',
-                                'text' => 'วันนี้วันที่ 8'
+                                'text' => 'วันนี้วันที่ 8 ครับ'
                                 
                                 //'type' => 'image',
                                // 'originalContentUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg',
@@ -54,6 +54,34 @@ foreach ($client->parseEvents() as $event) {
             break;
             }
                 
-        } 
+        } //end if
+    
+     if($today == "09" ) {
+                
+    switch ($event['type']) {
+        
+        case 'beacon':
+                
+             $client->replyMessage([
+                        'replyToken' => $event['replyToken'],
+                        'messages' => [
+                            [  
+                                'type' => 'text',
+                                'text' => 'วันนี้วันที่ 9 ครับ'
+                                
+                                //'type' => 'image',
+                               // 'originalContentUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg',
+                               // 'previewImageUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg'
+                            ]
+                        ]
+                    ]);
+             break;
+            
+        default:
+            error_log('Unsupported event type: ' . $event['type']);
+            break;
+            }
+                
+        } //end if
  
 };
