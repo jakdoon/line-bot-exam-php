@@ -29,12 +29,14 @@ foreach ($client->parseEvents() as $event) {
         
         case 'beacon':
           
+            if($today == 08 ) {
+                
              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             [  
                                 'type' => 'text',
-                                'text' => $today
+                                'text' => '5454545'
                                 
                                 //'type' => 'image',
                                // 'originalContentUrl' => 'http://personal.psu.edu/xqz5228/jpg.jpg',
@@ -42,7 +44,7 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
-                
+            }
             
             
             
