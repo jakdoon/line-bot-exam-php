@@ -56,15 +56,6 @@ foreach ($client->parseEvents() as $event) {
                         ]
                     ]);
             
-            $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($event['source']);
-            $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret );
-            
-            $ImageMessageBuilder = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder('https://shorturl.at/mqEJ9','https://shorturl.at/mqEJ9');
-            $response = $bot->pushMessage('($event['source']', $ImageMessageBuilder);
-
-            echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
-            
-          
             
              break;
             
