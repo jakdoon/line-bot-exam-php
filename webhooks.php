@@ -25,7 +25,10 @@ foreach ($client->parseEvents() as $event) {
         
         case 'beacon':
             
-             $client->replyMessage([
+            if($event['beacon.type'] == 'enter')
+            {
+            
+              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             ['type' => 'image',
@@ -34,6 +37,7 @@ foreach ($client->parseEvents() as $event) {
                             ]
                         ]
                     ]);
+            }
             
              break;
             
