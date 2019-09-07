@@ -30,7 +30,8 @@ foreach ($client->parseEvents() as $event) {
               $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
-                            [   'type' => 'image',
+                            [
+                                'type' => 'image',
                                 'originalContentUrl' => 'https://ak9.picdn.net/shutterstock/videos/13334429/thumb/12.jpg',
                                 'previewImageUrl' => 'https://ak9.picdn.net/shutterstock/videos/13334429/thumb/12.jpg'
                             ]
