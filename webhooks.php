@@ -25,7 +25,6 @@ foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         case 'beacon':
         
-            if($event['type']
               $client->replyMessage([
                         'replyToken' => $event['replyToken'],
                         'messages' => [
