@@ -20,6 +20,9 @@ $channelAccessToken = 'YOUx6X1kEbaLS5TynZm3x4nbd/now6MF4dSOUOIJnpNQJlQD5WKxDaJuI
 ';
 $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
+
+$today = date("d"); 
+
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
         
