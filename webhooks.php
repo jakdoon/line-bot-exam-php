@@ -56,15 +56,6 @@ foreach ($client->parseEvents() as $event) {
                         ]
                     ]);
             
-             $client->replyMessage([
-                        'replyToken' => $event['replyToken'],
-                        'messages' => [
-                            [
-                                'type' => 'text',
-                                'text' => 'I find You'
-                            ]
-                        ]
-                    ]);
           
             
              break;
