@@ -29,8 +29,9 @@ foreach ($client->parseEvents() as $event) {
                         'replyToken' => $event['replyToken'],
                         'messages' => [
                             [
-                                'type' => 'text',
-                                'text' => 'I find You'
+                                'type' => 'image',
+                                'originalContentUrl' => 'https://shorturl.at/mqEJ9'
+                                'previewImageUrl' => 'https://shorturl.at/mqEJ9'
                             ]
                         ]
                     ]);
