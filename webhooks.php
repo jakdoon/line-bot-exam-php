@@ -44,15 +44,15 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
+            "text" => "Avenue ยินดีต้อนรับค่ะ",
             "size" => "xxl",
             "weight" => "bold",
             "color" => "#000000"
           ],
           [
             "type" => "text",
-            "text" => "Rabbit Line Pay",
-            "size" => "lg",
+            "text" => "Brew With Happiness",
+            "size" => "xl",
             "weight" => "bold",
             "color" => "#000000"
           ],
@@ -108,6 +108,7 @@ $jsonFlex = [ //1
     
     
   ];  //1
+
 
 foreach ($client->parseEvents() as $event) {    
    if($today == "08" ) {
