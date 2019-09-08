@@ -39,8 +39,7 @@ $jsonFlex = [
         "gravity" => "center",
         "aspectMode" => "cover",
         "position" => "relative",
-        "aspectRatio" => "150:196",
-        "paddingAll" => "0px"      
+        "aspectRatio" => "150:196"    
           ],
           [
             "type" => "text",
