@@ -22,16 +22,17 @@ $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 date_default_timezone_set("Asia/Bangkok");
 $today = date("d"); 
-$jsonFlex = [
+
+$jsonFlex = [ //1
     "type" => "flex",
     "altText" => "Hello Flex Message",
-    "contents" => [
+    "contents" => [   //2
       "type" => "bubble",
       "direction" => "ltr",
-      "header" => [
+      "header" => [  //3
         "type" => "box",
         "layout" => "vertical",
-        "contents" => [
+        "contents" => [ 
           [
         "type" => "image",
         "url" => "https://www.nespresso.com/shared_res/mos/free_html/au/recipes-banners/img/caramelito-iced-coffee-recipe-menu.jpg",
@@ -62,7 +63,8 @@ $jsonFlex = [
             "color" => "#B2B2B2"
           ]
          
-        ]
+        ], 
+        "paddingAll": "0px"
       ],
       "body" => [
         "type" => "box",
@@ -97,15 +99,15 @@ $jsonFlex = [
               
           ]
             
-        ] // end footer
+        ] 
           
           
-      ]
+      ] //3
         
-    ]
+    ] //2
     
     
-  ];
+  ];  //1
 
 foreach ($client->parseEvents() as $event) {    
    if($today == "08" ) {
