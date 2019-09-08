@@ -26,8 +26,6 @@ $todayMM = date("i");
 $todayYY = date("Y"); 
 $todaymm = date("m");
 $todayDD = date("d");
-$randnum = rand(1,6);
-
 $jsonFlex = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -153,7 +151,6 @@ $jsonFlex = [ //1
     
     
   ];  //end $jsonFlex
-
 $jsonFlex2 = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -279,8 +276,6 @@ $jsonFlex2 = [ //1
     
     
   ];  //end $jsonFlex2
-
-
 foreach ($client->parseEvents() as $event) {    
     
    if($todayHH == "18" && $todayMM > "35" && $todayMM < "45") {
@@ -302,7 +297,7 @@ foreach ($client->parseEvents() as $event) {
             }
                 
         } 
-    else if ($todayHH == "19" && $todayMM > "45" && $todayMM < "59") {
+    else if ($todayHH == "19" && $todayMM > "00" && $todayMM < "59") {
     
         switch ($event['type']) {
         
@@ -319,7 +314,6 @@ foreach ($client->parseEvents() as $event) {
             error_log('Unsupported event type: ' . $event['type']);
             break;
             }
-
         
     }
     
