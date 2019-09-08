@@ -50,6 +50,11 @@ $jsonFlex = [ //1
             "weight" => "bold",
             "color" => "#000000"
           ],
+             [
+            "type" => "separator",
+            "margin" => "lg",
+            "color" => "#C3C3C3"
+          ],
           [
             "type" => "text",
             "text" => "Brew With Happiness",
