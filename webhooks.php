@@ -27,7 +27,7 @@ $todayYY = date("Y");
 $todaymm = date("m");
 $todayDD = date("d");
 $randnum = rand(1,6);
-$urllink1 = "https://wsc-hy.ddns.net/avenue/pic/".$randnum.".jpg";
+$urllink1 = "https://www.wsc.in.th/avenue/pic/".$randnum.".jpg";
 
 $jsonFlex = [ //1
     "type" => "flex",
@@ -166,7 +166,7 @@ $jsonFlex2 = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => "https://www.wsc.in.th/avenue/pic/1.jpg",
+        "url" => $urllink1,
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
@@ -300,7 +300,7 @@ foreach ($client->parseEvents() as $event) {
             }
                 
         } 
-    else if ($todayHH == "20" && $todayMM > "00" && $todayMM < "60") {
+    else if ($todayHH == "21" && $todayMM > "00" && $todayMM < "60") {
     
         switch ($event['type']) {
         
