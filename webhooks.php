@@ -25,122 +25,155 @@ date_default_timezone_set("Asia/Bangkok");
 $today = date("d"); 
 
 $jsonFlex = [
-    "type" => "flex",
-    "altText" => "Hello Flex Message",
-    "contents" => [
       "type" => "bubble",
-      "direction" => "ltr",
-      "header" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
+  "body" =>  [
+    "type" =>  "box",
+    "layout"=>  "vertical",
+    "contents" =>  [
+      [
+        "type" =>  "box",
+        "layout" =>  "horizontal",
+        "contents" =>  [
           [
-            "type" => "text",
-            "text" => "Purchase",
-            "size" => "lg",
-            "align" => "start",
-            "weight" => "bold",
-            "color" => "#009813"
+            "type" =>  "image",
+            "url" =>  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG",
+            "size" =>  "full",
+            "aspectMode" =>  "cover",
+            "aspectRatio" =>  "150 => 196",
+            "gravity" =>  "center",
+            "flex" =>  1
           ],
           [
-            "type" => "text",
-            "text" => "฿ 100.00",
-            "size" => "3xl",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "Rabbit Line Pay",
-            "size" => "lg",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "2019.02.14 21:47 (GMT+0700)",
-            "size" => "xs",
-            "color" => "#B2B2B2"
-          ],
-          [
-            "type" => "text",
-            "text" => "Payment complete.",
-            "margin" => "lg",
-            "size" => "lg",
-            "color" => "#000000"
+            "type" =>  "box",
+            "layout" =>  "vertical",
+            "contents" =>  [
+              [
+                "type" =>  "image",
+                "url" =>  "https://www.nespresso.com/shared_res/mos/free_html/au/recipes-banners/img/caramelito-iced-coffee-recipe-menu.jpg",
+                "size" =>  "full",
+                "aspectMode" =>  "cover",
+                "aspectRatio" =>  "150 => 98",
+                "gravity" =>  "bottom"
+              ],
+              [
+                "type" =>  "image",
+                "url" =>  "https://athome.starbucks.com/sites/site.prod.athome.starbucks.com/files/2019-06/CoffeeFinder_ArticleHeader_Desktop_1176x712.jpg",
+                "size" =>  "full",
+                "aspectMode" =>  "cover",
+                "aspectRatio" =>  "150 => 98",
+                "gravity" =>  "center"
+              ]
+            ],
+            "flex" =>  1
           ]
         ]
       ],
-      "body" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
+      [
+        "type" =>  "box",
+        "layout" =>  "horizontal",
+        "contents" =>  [
           [
-            "type" => "separator",
-            "color" => "#C3C3C3"
+            "type" =>  "box",
+            "layout" =>  "horizontal",
+            "contents" =>  [
+              [
+                "type" =>  "image",
+                "url" =>  "https://scontent.fbkk12-4.fna.fbcdn.net/v/t1.0-9/69124712_382950179051151_436505828464263168_n.jpg?_nc_cat=110&_nc_oc=AQmi6xYlPICphTnJuVeZgDjZf4apk0ZNo89sdp-tIu6uRM7oP8tZ53srBcake4CCwHc&_nc_ht=scontent.fbkk12-4.fna&oh=1cfaa2af3ec394b955bacc381edb316b&oe=5DFB08F6",
+                "aspectMode" =>  "cover",
+                "size" =>  "full",
+                "margin" =>  "md",
+                "align" =>  "center"
+              ]
+            ],
+            "cornerRadius" =>  "100px",
+            "width" =>  "95px",
+            "height" =>  "95px"
           ],
           [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
+            "type" =>  "box",
+            "layout" =>  "vertical",
+            "contents" =>  [
               [
-                "type" => "text",
-                "text" => "Merchant",
-                "align" => "start",
-                "color" => "#C3C3C3"
+                "type" =>  "text",
+                "contents" =>  [
+                  [
+                    "type" =>  "span",
+                    "text" =>  "Avenue Hatyai",
+                    "weight" =>  "bold",
+                    "color" =>  "#000000",
+                    "size" =>  "lg",
+                    "style" =>  "normal"
+                  ],
+                  [
+                    "type" =>  "span",
+                    "text" =>  " "
+                  ],
+                  [
+                    "type" =>  "span",
+                    "text" =>  "Brew With Happiness",
+                    "size" =>  "sm"
+                  ]
+                ],
+                "size" =>  "sm",
+                "wrap" =>  true
               ],
               [
-                "type" => "text",
-                "text" => "BTS 01",
-                "align" => "end",
-                "color" => "#000000"
+                "type" =>  "box",
+                "layout" =>  "baseline",
+                "contents" =>  [
+                  [
+                    "type" =>  "text",
+                    "text" =>  "1,140,753 Like",
+                    "size" =>  "sm",
+                    "color" =>  "#bcbcbc"
+                  ]
+                ],
+                "spacing" =>  "sm",
+                "margin" =>  "md"
               ]
             ]
-          ],
-          [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "New balance",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "฿ 45.57",
-                "align" => "end"
-              ]
-            ]
-          ],
-          [
-            "type" => "separator",
-            "margin" => "lg",
-            "color" => "#C3C3C3"
           ]
-        ]
+        ],
+        "spacing" =>  "xl",
+        "paddingAll" =>  "20px"
+      ]
+    ],
+    "paddingAll" =>  "0px"
+  ],
+  "footer" =>  [
+    "type" =>  "box",
+    "layout" =>  "vertical",
+    "contents" =>  [
+      [
+        "type" =>  "button",
+        "action" =>  [
+          "type" =>  "uri",
+          "label" =>  "Facebook",
+          "uri" =>  "https://www.facebook.com/Avenue.hdy/"
+        ],
+        "position" =>  "relative",
+        "height" =>  "md",
+        "style" =>  "link",
+        "gravity" =>  "center"
       ],
-      "footer" => [
-        "type" => "box",
-        "layout" => "horizontal",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "View Details",
-            "size" => "lg",
-            "align" => "start",
-            "color" => "#0084B6",
-            "action" => [
-              "type" => "uri",
-              "label" => "View Details",
-              "uri" => "https://google.co.th/"
-            ]
-          ]
+      [
+        "type" =>  "separator"
+      ],
+      [
+        "type" =>  "button",
+        "action" =>  [
+          "type" =>  "uri",
+          "label" =>  "Instagram",
+          "uri" =>  "https://www.instagram.com/avenue.hdy/?hl=en"
         ]
       ]
     ]
+  ],
+  "styles" =>  [
+    "header" =>  [
+      "separator" =>  false
+    ]
+  ]
   ];
 
 
