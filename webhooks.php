@@ -96,7 +96,7 @@ $jsonFlex = [ //1
         "gravity" => "center",
         "style" => "primary",
         "color" => "#F07152"
-      ],
+      ]
       
 
 
