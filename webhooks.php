@@ -56,7 +56,17 @@ $jsonFlex = [ //1
             "size" => "xl",
             "weight" => "bold",
             "color" => "#000000"
+          ],
+             [
+            "type" => "text",
+            "text" => "ติดตาม เราได้ที่ช่องทาง",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
           ]
+            
+            
          
         ], 
         "paddingAll" => "0px"
