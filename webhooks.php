@@ -82,7 +82,15 @@ $jsonFlex = [ //1
             "size" => "md",
             "weight" => "bold",
             "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => $todayHH,
+            "align" => "start",
+            "size" => "sm",
+            "color" => "#C1CDE0"
           ]
+            
             
          
         ], 
