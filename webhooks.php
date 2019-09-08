@@ -87,11 +87,11 @@ $jsonFlex = [ //1
           ],
       [
         "type" => "button",
-        "action" => {
+        "action" => [
           "type" => "uri",
           "label" => "Instagram",
           "uri" => "https://www.instagram.com/avenue.hdy"
-        },
+        ],
         "gravity" => "center",
         "style" => "primary",
         "color" => "#F07152"
