@@ -68,7 +68,7 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => "ยินดีให้บริการครับ \uDBC0\uDC84",
+            "text" => "ยินดีให้บริการครับ",
             "align" => "center",
             "size" => "md",
             "weight" => "bold",
