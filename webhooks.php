@@ -46,6 +46,7 @@ $jsonFlex = [ //1
             "type" => "text",
             "text" => "Avenue ยินดีต้อนรับค่ะ",
             "size" => "xxl",
+            "offsetTop" => "15px",
             "weight" => "bold",
             "color" => "#000000"
           ],
