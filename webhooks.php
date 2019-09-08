@@ -163,7 +163,7 @@ $jsonFlex2 = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => "https://www.abc.net.au/cm/rimage/10793042-3x2-large.jpg",
+        "url" => "http://wsc-hy.ddns.net/avenue/pic/3.jpg",
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
