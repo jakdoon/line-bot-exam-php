@@ -29,55 +29,24 @@ $jsonFlex = [
     "altText" => "Hello Flex Message",
     "contents" => [
       "type" => "bubble",
-      "direction" => "ltr",
-      "header" => [
-        "type" => "box",
-        "layout" => "vertical",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "Purchase",
-            "size" => "lg",
-            "align" => "start",
-            "weight" => "bold",
-            "color" => "#009813"
-          ],
-          [
-            "type" => "text",
-            "text" => "฿ 100.00",
-            "size" => "3xl",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "Rabbit Line Pay",
-            "size" => "lg",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "2019.02.14 21:47 (GMT+0700)",
-            "size" => "xs",
-            "color" => "#B2B2B2"
-          ],
-          [
-            "type" => "text",
-            "text" => "Payment complete.",
-            "margin" => "lg",
-            "size" => "lg",
-            "color" => "#000000"
-          ]
-        ]
-      ],
       "body" => [
         "type" => "box",
         "layout" => "vertical",
         "contents" => [
           [
-            "type" => "separator",
-            "color" => "#C3C3C3"
+            "type" => "box",
+            "layout" => "horizontal",  
+                 "contents" => [
+                          "type" => "image",
+                           "Url" => "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG",
+                            "Size" => "full"
+                            "aspectMode" => "cover",
+                              "aspectRatio" => "150:196",
+                              "gravity" => "center",
+                             "flex" => 1
+                     
+                     
+                                ]
           ],
           [
             "type" => "box",
