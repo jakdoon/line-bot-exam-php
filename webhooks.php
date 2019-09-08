@@ -64,7 +64,7 @@ $jsonFlex = [ //1
           ]
          
         ], 
-        "paddingAll": "0px"
+        "paddingAll" => "0px"
       ],
       "body" => [
         "type" => "box",
