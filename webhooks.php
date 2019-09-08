@@ -89,7 +89,7 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => $todayHH.":".$todayMM."   ".todayDD."/".todaymm."/".todayYY,
+            "text" => $todayHH.":".$todayMM."  ".$todayDD."/".$todaymm."/".$todayYY,
             "align" => "start",
             "size" => "sm",
             "color" => "#C1CDE0",
