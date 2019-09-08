@@ -45,7 +45,7 @@ $jsonFlex = [ //1
           [
             "type" => "text",
             "text" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
-            "size" => "3xl",
+            "size" => "xxl",
             "weight" => "bold",
             "color" => "#000000"
           ],
