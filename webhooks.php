@@ -23,6 +23,10 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 date_default_timezone_set("Asia/Bangkok");
 $todayHH = date("H"); 
 $todayMM = date("i"); 
+$todayYY = date("Y"); 
+$todaymm = date("m");
+$todayDD = date("d");
+
 
 $jsonFlex = [ //1
     "type" => "flex",
@@ -77,7 +81,7 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => "สามารถติดตามข่าวสาร โปรโมชั่นดีๆ ได้ที่".$todayHH,
+            "text" => "สามารถติดตามข่าวสาร โปรโมชั่นดีๆ ได้ที่",
             "align" => "center",
             "size" => "md",
             "weight" => "bold",
@@ -85,10 +89,12 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => $todayHH.":".$todayMM,
+            "text" => $todayHH.":".$todayMM."   ".todayDD."/".todaymm."/".todayYY,
             "align" => "start",
             "size" => "sm",
-            "color" => "#C1CDE0"
+            "color" => "#C1CDE0",
+            "offsetStart" => "25px"
+
           ]
             
             
