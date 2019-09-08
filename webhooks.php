@@ -55,12 +55,6 @@ $jsonFlex = [ //1
             "size" => "xl",
             "weight" => "bold",
             "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "2019.02.14 21:47 (GMT+0700)",
-            "size" => "xs",
-            "color" => "#B2B2B2"
           ]
          
         ], 
@@ -72,8 +66,23 @@ $jsonFlex = [ //1
         "contents" => [
           [
             "type" => "separator",
+            "margin" => "lg",
             "color" => "#C3C3C3"
           ],
+             [
+        "type" => "button",
+        "action" => [
+          "type" => "uri",
+          "label" => "Fackbook",
+          "uri" => "https://www.facebook.com/Avenue.hdy"
+        ],
+        "gravity" => "center",
+        "style" => "primary",
+        "color" => "#4E7BED"
+      ],
+
+
+
           [
             "type" => "separator",
             "margin" => "lg",
