@@ -163,7 +163,7 @@ $jsonFlex2 = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => "http://wsc-hy.ddns.net/avenue/pic/1.jpg",
+        "url" => "https://www.abc.net.au/cm/rimage/10793042-3x2-large.jpg",
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
@@ -297,7 +297,7 @@ foreach ($client->parseEvents() as $event) {
             }
                 
         } 
-    else if ($todayHH == "19" && $todayMM > "00" && $todayMM < "59") {
+    else if ($todayHH == "20" && $todayMM > "00" && $todayMM < "15") {
     
         switch ($event['type']) {
         
