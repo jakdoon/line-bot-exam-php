@@ -35,12 +35,13 @@ $jsonFlex = [
         "layout" => "vertical",
         "contents" => [
           [
-            "type" => "text",
-            "text" => "Purchase",
-            "size" => "lg",
-            "align" => "start",
-            "weight" => "bold",
-            "color" => "#009813"
+           "type" => "image",
+            "url" => "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG",
+            "size" => "full",
+            "aspectMode" => "cover",
+            "aspectRatio" => "150:196",
+            "gravity" => "center",
+            "flex" => 1
           ],
           [
             "type" => "text",
