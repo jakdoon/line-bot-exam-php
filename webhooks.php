@@ -26,6 +26,7 @@ $todayMM = date("i");
 $todayYY = date("Y"); 
 $todaymm = date("m");
 $todayDD = date("d");
+
 $jsonFlex = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -150,8 +151,137 @@ $jsonFlex = [ //1
     ] //2
     
     
-  ];  //1
+  ];  //end $jsonFlex
+
+$jsonFlex2 = [ //1
+    "type" => "flex",
+    "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
+    "contents" => [   //2
+      "type" => "bubble",
+      "direction" => "ltr",
+      "header" => [  //3
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [ 
+          [
+        "type" => "image",
+        "url" => "https://www.abc.net.au/cm/rimage/10793042-3x2-large.jpg",
+        "size" => "full",
+        "gravity" => "center",
+        "aspectMode" => "cover",
+        "position" => "relative",
+        "aspectRatio" => "20:13"    
+          ],
+          [
+            "type" => "text",
+            "text" => "Avenue",
+            "align" => "center",
+            "size" => "xxl",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "Brew With Happiness",
+            "align" => "center",
+            "size" => "xl",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "  ",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "ยินดีให้บริการครับ",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "สามารถติดตามข่าวสาร โปรโมชั่นดีๆ ได้ที่",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
+          ]
+            
+            
+         
+        ], 
+        "paddingAll" => "0px"
+      ],
+      "body" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
+          [
+            "type" => "separator",
+            "margin" => "lg",
+            "color" => "#C3C3C3"
+          ],
+             [
+        "type" => "button",
+        "action" => [
+          "type" => "uri",
+          "label" => "Fackbook",
+          "uri" => "https://www.facebook.com/Avenue.hdy"
+        ],
+        "gravity" => "center",
+        "style" => "primary",
+        "color" => "#4E7BED"
+      ],
+      [
+            "type" => "separator",
+            "margin" => "lg",
+            "color" => "#C3C3C3"
+          ],
+      [
+        "type" => "button",
+        "action" => [
+          "type" => "uri",
+          "label" => "Instagram",
+          "uri" => "https://www.instagram.com/avenue.hdy"
+        ],
+        "gravity" => "center",
+        "style" => "primary",
+        "color" => "#F07152"
+      ],
+          [
+            "type" => "text",
+            "text" => "  ",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => $todayHH.":".$todayMM."  ".$todayDD."/".$todaymm."/".$todayYY,
+            "align" => "start",
+            "size" => "sm",
+            "color" => "#C1CDE0"
+          ]
+      
+          
+        ]
+      ]
+        
+    ] //2
+    
+    
+  ];  //end $jsonFlex2
+
+
 foreach ($client->parseEvents() as $event) {    
+    
    if($todayHH == "18" && $todayMM > "35" && $todayMM < "45") {
                 
     switch ($event['type']) {
@@ -170,7 +300,10 @@ foreach ($client->parseEvents() as $event) {
             break;
             }
                 
-        } //end if
+        } 
+    else if ($todayHH == "19" && $todayMM > "00" && $todayMM < "15") {
+        
+    }
     
     
  
