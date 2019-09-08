@@ -39,7 +39,7 @@ $jsonFlex = [ //1
         "gravity" => "center",
         "aspectMode" => "cover",
         "position" => "relative",
-        "aspectRatio" => "150:196"    
+        "aspectRatio" => "150:150"    
           ],
           [
             "type" => "text",
@@ -49,11 +49,6 @@ $jsonFlex = [ //1
             "weight" => "bold",
             "color" => "#000000"
           ],
-             [
-        "type" => "separator",
-        "margin" => "xxl",
-        "color" =>  "#4E7BED"
-      ],
           [
             "type" => "text",
             "text" => "Brew With Happiness",
@@ -61,16 +56,7 @@ $jsonFlex = [ //1
             "size" => "xl",
             "weight" => "bold",
             "color" => "#000000"
-          ],
-          [
-            "type" => "text",
-            "text" => "หากต้องการสอบถาม",
-            "align" => "center",
-            "size" => "md",
-            "weight" => "bold",
-            "color" => "#000000"
           ]
-            
          
         ], 
         "paddingAll" => "0px"
