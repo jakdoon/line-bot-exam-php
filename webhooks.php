@@ -36,7 +36,7 @@ $jsonFlex = [
         "contents" => [
           [
            "type" => "image",
-            "url" => "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG",
+            "url" => "https://www.nespresso.com/shared_res/mos/free_html/au/recipes-banners/img/caramelito-iced-coffee-recipe-menu.jpg",
             "size" => "full",
             "aspectMode" => "cover",
             "aspectRatio" => "150:196",
