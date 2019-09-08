@@ -47,7 +47,8 @@ $jsonFlex = [
                                 ]
                                 
                                     
-          ],
+          ], //end box
+            
           [
             "type" => "box",
             "layout" => "baseline",
@@ -65,8 +66,10 @@ $jsonFlex = [
                 "align" => "end",
                 "color" => "#000000"
               ]
-            ]
-          ],
+            ] // end content
+              
+          ], // end box
+            
           [
             "type" => "box",
             "layout" => "baseline",
@@ -82,32 +85,20 @@ $jsonFlex = [
                 "text" => "฿ 45.57",
                 "align" => "end"
               ]
-            ]
-          ],
+            ]// end content
+              
+          ],// end box
+            
+            
           [
             "type" => "separator",
             "margin" => "lg",
             "color" => "#C3C3C3"
           ]
+            
         ]
-      ],
-      "footer" => [
-        "type" => "box",
-        "layout" => "horizontal",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "View Details",
-            "size" => "lg",
-            "align" => "start",
-            "color" => "#0084B6",
-            "action" => [
-              "type" => "uri",
-              "label" => "View Details",
-              "uri" => "https://google.co.th/"
-            ]
-          ]
-        ]
+      ]
+     
       ]
     ]
   ];
