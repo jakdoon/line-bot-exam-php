@@ -26,6 +26,9 @@ $todayMM = date("i");
 $todayYY = date("Y"); 
 $todaymm = date("m");
 $todayDD = date("d");
+$randnum = rand(1,6);
+$urllink1 = "https://wsc-hy.ddns.net/avenue/pic/".$randnum.".jpg";
+
 $jsonFlex = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -163,7 +166,7 @@ $jsonFlex2 = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => "http://wsc-hy.ddns.net/avenue/pic/3.jpg",
+        "url" => $urllink1,
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
