@@ -77,7 +77,7 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => "สามารถติดตามข่าวสาร โปรโมชั่นดีๆ ได้ที่"+$todayHH,
+            "text" => "สามารถติดตามข่าวสาร โปรโมชั่นดีๆ ได้ที่".$todayHH,
             "align" => "center",
             "size" => "md",
             "weight" => "bold",
