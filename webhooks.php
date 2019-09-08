@@ -46,7 +46,7 @@ $jsonFlex = [
       ]
     ],
     "paddingAll" => "0px"
-  }
+  ]
       
     ]
   ];
