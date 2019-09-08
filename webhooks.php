@@ -148,7 +148,7 @@ $jsonFlex = [ //1
     
   ];  //1
 foreach ($client->parseEvents() as $event) {    
-   if($todayHH == "17" ) {
+   if($todayHH == "18" ) {
                 
     switch ($event['type']) {
         
