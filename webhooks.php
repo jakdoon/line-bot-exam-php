@@ -302,6 +302,23 @@ foreach ($client->parseEvents() as $event) {
                 
         } 
     else if ($todayHH == "19" && $todayMM > "00" && $todayMM < "15") {
+    
+        switch ($event['type']) {
+        
+        case 'beacon':
+                
+             $client->replyMessage([
+                        'replyToken' => $event['replyToken'],
+                        'messages' => [$jsonFlex2]
+                         
+                    ]);
+             break;
+            
+        default:
+            error_log('Unsupported event type: ' . $event['type']);
+            break;
+            }
+
         
     }
     
