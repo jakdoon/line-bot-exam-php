@@ -166,7 +166,7 @@ $jsonFlex2 = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => $urllink1,
+        "url" => "https://wsc-hy.ddns.net/avenue/pic/6.jpg",
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
