@@ -22,7 +22,6 @@ $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 date_default_timezone_set("Asia/Bangkok");
 $today = date("d"); 
-
 $jsonFlex = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -40,20 +39,19 @@ $jsonFlex = [ //1
         "gravity" => "center",
         "aspectMode" => "cover",
         "position" => "relative",
-        "aspectRatio" => "150:150"    
+        "aspectRatio" => "150:196"    
           ],
           [
             "type" => "text",
             "text" => "Avenue ยินดีต้อนรับค่ะ",
-            "align" => "center",
             "size" => "xxl",
+            "offsetTop" => "15px",
             "weight" => "bold",
             "color" => "#000000"
           ],
           [
             "type" => "text",
             "text" => "Brew With Happiness",
-            "align" => "center",
             "size" => "xl",
             "weight" => "bold",
             "color" => "#000000"
@@ -99,8 +97,6 @@ $jsonFlex = [ //1
         "color" => "#F07152"
       ]
       
-
-
           
         ]
       ]
@@ -109,7 +105,6 @@ $jsonFlex = [ //1
     
     
   ];  //1
-
 foreach ($client->parseEvents() as $event) {    
    if($today == "08" ) {
                 
