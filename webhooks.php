@@ -22,6 +22,10 @@ $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 date_default_timezone_set("Asia/Bangkok");
 $today = date("d"); 
+$code = '100005';
+$bin = hex2bin(str_repeat('0', 8 - strlen($code)) . $code);
+$emoticon =  mb_convert_encoding($bin, 'UTF-8', 'UTF-32BE');
+
 $jsonFlex = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -43,7 +47,7 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => "Avenue ยินดีต้อนรับค่ะ",
+            "text" => "Avenue",
             "align" => "center",
             "size" => "xxl",
             "weight" => "bold",
@@ -60,6 +64,14 @@ $jsonFlex = [ //1
           [
             "type" => "text",
             "text" => "  ",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "ยินดีให้บริการครับ $emoticon",
             "align" => "center",
             "size" => "md",
             "weight" => "bold",
