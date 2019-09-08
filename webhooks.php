@@ -28,14 +28,16 @@ $jsonFlex = [
     "type" => "flex",
     "altText" => "Hello Flex Message",
     "contents" => [
+        [
         
-         "type" => "bubble",
-  "size" => "giga",
-  "header" => [
-    "type" => "box",
-    "layout" => "vertical",
-    "contents" => [
-      [
+               "type" => "bubble",
+               "size" => "giga",
+            
+           "header" => [
+               "type" => "box",
+               "layout" => "vertical",
+               "contents" => [
+                                 [
         "type" => "image",
         "url" => "https://www.nespresso.com/shared_res/mos/free_html/au/recipes-banners/img/caramelito-iced-coffee-recipe-menu.jpg",
         "size" => "full",
@@ -43,13 +45,14 @@ $jsonFlex = [
         "aspectMode" => "cover",
         "position" => "relative",
         "aspectRatio" > "150:196"
-      ]
-    ],
+                                 ]
+                             ],
     "paddingAll" => "0px"
-  ]
+                        ]
+         ]
       
-    ]
-  ];
+                  ]
+              ];
 
 
 foreach ($client->parseEvents() as $event) {    
