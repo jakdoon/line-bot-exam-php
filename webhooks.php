@@ -103,24 +103,7 @@ $jsonFlex = [ //1
         ]
       ],
       "footer" => [
-        "type" => "box",
-        "layout" => "horizontal",
-        "contents" => [
-          [
-            "type" => "text",
-            "text" => "View Details",
-            "size" => "lg",
-            "align" => "start",
-            "color" => "#0084B6",
-            "action" => [
-              "type" => "uri",
-              "label" => "View Details",
-              "uri" => "https://google.co.th/"
-            ]
-              
-          ]
-            
-        ] 
+       
           
           
       ] //3
