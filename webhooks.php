@@ -32,7 +32,7 @@ $jsonFlex = [
       "body" => [
         "type" => "box",
         "layout" => "vertical",
-        "contents" => [
+        "contents" => [  //start contect 1
           [
             "type" => "box",
             "layout" => "horizontal",  
@@ -90,18 +90,15 @@ $jsonFlex = [
           ],// end box
             
             
-          [
-            "type" => "separator",
-            "margin" => "lg",
-            "color" => "#C3C3C3"
-          ]
+         
             
-        ]
-      ]
+        ] //start contect 1
+          
+      
      
-      ]
-    ]
-  ];
+      ] // end body
+    ] //end contect 1
+  ]; //end 1
 
 
 foreach ($client->parseEvents() as $event) {    
