@@ -91,23 +91,6 @@ $jsonFlex = [
             ]
           ],
           [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "New balance",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "฿ 45.57",
-                "align" => "end"
-              ]
-            ]
-          ],
-          [
             "type" => "separator",
             "margin" => "lg",
             "color" => "#C3C3C3"
