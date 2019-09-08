@@ -281,7 +281,7 @@ $jsonFlex2 = [ //1
   ];  //end $jsonFlex2
 foreach ($client->parseEvents() as $event) {    
     
-   if($todayHH == "18" && $todayMM > "35" && $todayMM < "45") {
+   if($todayHH == "7" && $todayMM > "15" && $todayMM < "20") {
                 
     switch ($event['type']) {
         
@@ -289,7 +289,7 @@ foreach ($client->parseEvents() as $event) {
                 
              $client->replyMessage([
                         'replyToken' => $event['replyToken'],
-                        'messages' => [$jsonFlex]
+                        'messages' => [$jsonFlex2]
                          
                     ]);
              break;
