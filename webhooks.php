@@ -25,7 +25,7 @@ $today = date("d");
 
 $jsonFlex = [ //1
     "type" => "flex",
-    "altText" => "Hello Flex Message",
+    "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
     "contents" => [   //2
       "type" => "bubble",
       "direction" => "ltr",
@@ -44,7 +44,7 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => "฿ 100.00",
+            "text" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
             "size" => "3xl",
             "weight" => "bold",
             "color" => "#000000"
