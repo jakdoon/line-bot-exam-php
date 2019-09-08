@@ -72,25 +72,6 @@ $jsonFlex = [
             "color" => "#C3C3C3"
           ],
           [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "Merchant",
-                "align" => "start",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "BTS 01",
-                "align" => "end",
-                "color" => "#000000"
-              ]
-            ]
-          ],
-          [
             "type" => "separator",
             "margin" => "lg",
             "color" => "#C3C3C3"
