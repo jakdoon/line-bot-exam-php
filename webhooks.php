@@ -26,6 +26,7 @@ $todayMM = date("i");
 $todayYY = date("Y"); 
 $todaymm = date("m");
 $todayDD = date("d");
+$randnum = rand(1,6);
 
 $jsonFlex = [ //1
     "type" => "flex",
@@ -165,7 +166,7 @@ $jsonFlex2 = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => "https://www.abc.net.au/cm/rimage/10793042-3x2-large.jpg",
+        "url" => "http://wsc-hy.ddns.net/avenue/pic/".$randnum.".jpg",
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
@@ -301,7 +302,7 @@ foreach ($client->parseEvents() as $event) {
             }
                 
         } 
-    else if ($todayHH == "19" && $todayMM > "00" && $todayMM < "15") {
+    else if ($todayHH == "19" && $todayMM > "45" && $todayMM < "59") {
     
         switch ($event['type']) {
         
