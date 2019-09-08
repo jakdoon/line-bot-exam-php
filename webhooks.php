@@ -26,11 +26,6 @@ $todayMM = date("i");
 $todayYY = date("Y"); 
 $todaymm = date("m");
 $todayDD = date("d");
-
-$randnum = rand(1,6);
-$urllink = "http://wsc-hy.ddns.net/avenue/pic/".$randnum.".jpg";
-$urllink2 = "http://wsc-hy.ddns.net/avenue/pic/1.jpg";
-
 $jsonFlex = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -43,7 +38,7 @@ $jsonFlex = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => "http://wsc-hy.ddns.net/avenue/pic/".$randnum.".jpg",
+        "url" => "https://www.nespresso.com/shared_res/mos/free_html/au/recipes-banners/img/caramelito-iced-coffee-recipe-menu.jpg",
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
