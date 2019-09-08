@@ -152,7 +152,7 @@ $jsonFlex = [ //1
     
   ];  //1
 foreach ($client->parseEvents() as $event) {    
-   if($todayHH == "18" && $todayMM > "25" && $todayMM < "35") {
+   if($todayHH == "18" && $todayMM > "35" && $todayMM < "45") {
                 
     switch ($event['type']) {
         
