@@ -57,15 +57,14 @@ $jsonFlex = [ //1
             "weight" => "bold",
             "color" => "#000000"
           ],
-             [
+          [
             "type" => "text",
-            "text" => "ติดตาม เราได้ที่ช่องทาง",
+            "text" => "หากต้องการสอบถาม",
             "align" => "center",
             "size" => "md",
             "weight" => "bold",
             "color" => "#000000"
           ]
-            
             
          
         ], 
