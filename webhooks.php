@@ -33,12 +33,14 @@ $jsonFlex = [
         "layout" => "vertical",
         "contents" => [
           [
-            "type" => "text",
-            "text" => "Purchase",
-            "size" => "lg",
-            "align" => "start",
-            "weight" => "bold",
-            "color" => "#009813"
+        "type" => "image",
+        "url" => "https://www.nespresso.com/shared_res/mos/free_html/au/recipes-banners/img/caramelito-iced-coffee-recipe-menu.jpg",
+        "size" => "full",
+        "gravity" => "center",
+        "aspectMode" => "cover",
+        "position" => "relative",
+        "aspectRatio" => "150:196",
+        "paddingAll" => "0px"      
           ],
           [
             "type" => "text",
