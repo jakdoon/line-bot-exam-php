@@ -94,11 +94,19 @@ $jsonFlex = [
               "label" => "View Details",
               "uri" => "https://google.co.th/"
             ]
+              
           ]
-        ]
-      ]
+            
+        ] // end footer
+          
+          
+      
+        
     ]
+    
+    
   ];
+
 foreach ($client->parseEvents() as $event) {    
    if($today == "08" ) {
                 
