@@ -297,7 +297,7 @@ foreach ($client->parseEvents() as $event) {
             }
                 
         } 
-    else if ($todayHH == "20" && $todayMM > "00" && $todayMM < "15") {
+    else if ($todayHH == "20" && $todayMM > "00" && $todayMM < "55") {
     
         switch ($event['type']) {
         
