@@ -129,6 +129,14 @@ $jsonFlex = [ //1
       ],
           [
             "type" => "text",
+            "text" => "  ",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
             "text" => $todayHH.":".$todayMM."  ".$todayDD."/".$todaymm."/".$todayYY,
             "align" => "start",
             "size" => "sm",
