@@ -80,14 +80,26 @@ $jsonFlex = [ //1
         "style" => "primary",
         "color" => "#4E7BED"
       ],
-
-
-
-          [
+      [
             "type" => "separator",
             "margin" => "lg",
             "color" => "#C3C3C3"
-          ]
+          ],
+      [
+        "type" => "button",
+        "action" => {
+          "type" => "uri",
+          "label" => "Instagram",
+          "uri" => "https://www.instagram.com/avenue.hdy"
+        },
+        "gravity" => "center",
+        "style" => "primary",
+        "color" => "#F07152"
+      ],
+      
+
+
+          
         ]
       ],
       "footer" => [
@@ -117,7 +129,6 @@ $jsonFlex = [ //1
     
     
   ];  //1
-
 
 foreach ($client->parseEvents() as $event) {    
    if($today == "08" ) {
