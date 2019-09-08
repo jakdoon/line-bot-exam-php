@@ -47,28 +47,11 @@ $jsonFlex = [
                                 ]
                                 
                                     
-          ], //end box
+          ], 
             
-          [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "Merchant",
-                "align" => "start",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "BTS 01",
-                "align" => "end",
-                "color" => "#000000"
-              ]
-            ] // end content
+         
               
-          ], // end box
+          
             
           [
             "type" => "box",
@@ -92,7 +75,7 @@ $jsonFlex = [
             
          
             
-        ] //start contect 1
+        ] //end contect 1
           
       
      
