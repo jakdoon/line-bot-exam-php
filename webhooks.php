@@ -21,7 +21,8 @@ $channelAccessToken = 'YOUx6X1kEbaLS5TynZm3x4nbd/now6MF4dSOUOIJnpNQJlQD5WKxDaJuI
 $channelSecret = '5547fa3d2e827fe0d1c8f0305c2c29ab';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 date_default_timezone_set("Asia/Bangkok");
-$today = date("d"); 
+$todayHH = date("H"); 
+$todayMM = date("i"); 
 
 $jsonFlex = [ //1
     "type" => "flex",
@@ -76,7 +77,7 @@ $jsonFlex = [ //1
           ],
           [
             "type" => "text",
-            "text" => "สามารถติดตามข่าวสาร โปรโมชั่นดีๆ ได้ที่",
+            "text" => "สามารถติดตามข่าวสาร โปรโมชั่นดีๆ ได้ที่"+$todayHH,
             "align" => "center",
             "size" => "md",
             "weight" => "bold",
@@ -133,7 +134,7 @@ $jsonFlex = [ //1
     
   ];  //1
 foreach ($client->parseEvents() as $event) {    
-   if($today == "08" ) {
+   if($todayHH == "17" ) {
                 
     switch ($event['type']) {
         
