@@ -45,42 +45,19 @@ $jsonFlex = [
                               "gravity" => "center",
                              "flex" => 1          
                                 ]
-                                
                                     
-          ], 
-            
-         
-              
-          
-            
-          [
-            "type" => "box",
-            "layout" => "baseline",
-            "margin" => "lg",
-            "contents" => [
-              [
-                "type" => "text",
-                "text" => "New balance",
-                "color" => "#C3C3C3"
-              ],
-              [
-                "type" => "text",
-                "text" => "฿ 45.57",
-                "align" => "end"
-              ]
-            ]// end content
-              
-          ],// end box
-            
-            
-         
+   
             
         ] //end contect 1
           
-      
+       ] // end body
      
       ] // end body
+          
+          
     ] //end contect 1
+        
+        
   ]; //end 1
 
 
