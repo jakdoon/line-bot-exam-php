@@ -26,8 +26,6 @@ $todayMM = date("i");
 $todayYY = date("Y"); 
 $todaymm = date("m");
 $todayDD = date("d");
-
-
 $jsonFlex = [ //1
     "type" => "flex",
     "altText" => "ร้าน Avenue ยินดีต้อนรับค่ะ",
@@ -128,23 +126,14 @@ $jsonFlex = [ //1
         "gravity" => "center",
         "style" => "primary",
         "color" => "#F07152"
-      ], 
-          [
-            "type" => "text",
-            "text" => "  ",
-            "align" => "center",
-            "size" => "md",
-            "weight" => "bold",
-            "color" => "#000000"
-          ],
+      ],
           [
             "type" => "text",
             "text" => $todayHH.":".$todayMM."  ".$todayDD."/".$todaymm."/".$todayYY,
             "align" => "start",
             "size" => "sm",
             "color" => "#C1CDE0",
-            "offsetStart" => "5px"
-
+            "offsetStart" => "15px"
           ]
       
           
@@ -156,7 +145,7 @@ $jsonFlex = [ //1
     
   ];  //1
 foreach ($client->parseEvents() as $event) {    
-   if($todayHH == "18" && $todayMM > "20" && $todayMM < "30") {
+   if($todayHH == "18" && $todayMM > "10" && $todayMM < "20") {
                 
     switch ($event['type']) {
         
