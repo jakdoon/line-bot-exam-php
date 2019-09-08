@@ -166,7 +166,7 @@ $jsonFlex2 = [ //1
         "contents" => [ 
           [
         "type" => "image",
-        "url" => "https://httpsimage.com/v2/7742cb32-f6ad-4b46-8d3e-81f17826d288.jpg",
+        "url" => "https://www.wsc.in.th/avenue/pic/1.jpg",
         "size" => "full",
         "gravity" => "center",
         "aspectMode" => "cover",
