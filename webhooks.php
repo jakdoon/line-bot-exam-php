@@ -49,6 +49,11 @@ $jsonFlex = [ //1
             "weight" => "bold",
             "color" => "#000000"
           ],
+             [
+        "type" => "separator",
+        "margin" => "xxl",
+        "color" =>  "#4E7BED"
+      ],
           [
             "type" => "text",
             "text" => "Brew With Happiness",
@@ -56,7 +61,16 @@ $jsonFlex = [ //1
             "size" => "xl",
             "weight" => "bold",
             "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "หากต้องการสอบถาม",
+            "align" => "center",
+            "size" => "md",
+            "weight" => "bold",
+            "color" => "#000000"
           ]
+            
          
         ], 
         "paddingAll" => "0px"
